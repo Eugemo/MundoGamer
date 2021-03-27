@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+ 
+    <body>
+         <!-- importo el NavBar -->
+         <object data="common/navBar.html" type="text/x-scriptlet"></object> 
+            
+        <div>            
+            <h1>Dejame tu comentario</h1>
+                <form>
+                   <div>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                        </div> 
+                    </div>
+                <div>
+                    <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ingrese su email">
+                </div> 
+                <div>
+                    <div>
+                        <label for="domicilio">Domicilio</label>
+                        <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                    </div>
+                    <div>
+                        <label for="zona">Zona</label>
+                        <select id="zona" class="form-control">
+                            <option>Centro</option>
+                            <option>Zona Sur</option>
+                            <option>Zona Norte</option>
+                            <option>Zona ESte</option>
+                            <option>Zona Oeste</option>
+                        </select>
+                    </div> 
+                </div>
+                <div>
+                  <label for="comentario">Comentario</label>
+                  <textarea id="comentario" class="form-control" rows="10"></textarea>  
+                </div>   
+                <div>
+                    <div>
+                        <input type="checkbox" class="form-check-input" id="gridCheck">
+                        <label class="form-check-label" for="exampleCheck1">Quiero que me contacten</label>
+                    </div>
+                </div>
+                   <button type="submit">Enviar</button>
+                </form>
+        </div>
+   
+    <!-- importo el footer -->
+    <object data="common/footer.html" type="text/x-scriptlet"></object>
+    
+  </body>
+</html>
