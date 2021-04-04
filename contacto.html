@@ -3,61 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"  type="text/css">
+
     <title>Contacto</title>
  
     <body>
+        
          <!-- importo el NavBar -->
-         <object data="common/navBar.html" type="text/x-scriptlet"></object> 
-            
-        <div>            
-            <h1>Dejame tu comentario</h1>
-                <form>
-                   <div>
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                        </div>
-                        <div>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
-                        </div> 
+        <nav>           
+            <iframe src="common\navBar.html"></iframe>
+        </nav>
+                    
+        <section id="contacto" class="container-fluid p-5">
+            <div class="container">
+                <h1 class="letra-blanca">Contactanos</h1>
+                <div class="row">
+                    <div class="col letra-blanca">                       
+                        <h3>Dirección</h3>
+                        <address>
+                            <a href="mailto:email@example.com">email@example.com </a> - <a
+                                href="#"> web.ejemplo.com</a>
+                            <p>Telefono +54 3804 000000</p>    
+                            <p>Calle Siempreviva 742, La Rioja, Argentina</p>
+                        </address>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55607.97917661942!2d-66.89079674228535!3d-29.414217603539075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427d9873396f7e5%3A0x3e1c9c348972c7ca!2sLa%20Rioja!5e0!3m2!1ses!2sar!4v1617414491839!5m2!1ses!2sar" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                    
                     </div>
-                <div>
-                    <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="Ingrese su email">
-                </div> 
-                <div>
-                    <div>
-                        <label for="domicilio">Domicilio</label>
-                        <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                    <div class="col letra-blanca">
+                        <h3 class="text-center">Mensaje</h3>
+                        <form action="https://formspree.io/f/xoqpwwja" method="post">
+                            <div>
+                                <div>
+                                    <label for="Motivo">Motivo</label>
+                                        <select id="motivo" class="form-select">
+                                            <option>Consulta</option>
+                                            <option>Pedido</option>
+                                            <option>Reclamo</option>                                        
+                                        </select>
+                                </div>
+
+                                <div>
+                                     <label for="nombre">Nombre y Apellido</label>
+                                     <input type="text" class="form-control" id="nombreYApellido" placeholder="Ingrese su nombre y apellido">
+                                </div>
+                                                                                 
+                                <div>
+                                    <label for="email">Email</label>
+                                        <input type="text" class="form-control" id="email" placeholder="Ingrese su email">
+                                </div> 
+                             
+                                <div>
+                                     <div>
+                                         <label for="domicilio">Domicilio </label>
+                                        <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            <div>
+                               <label for="comentario">Comentario</label>
+                               <textarea id="comentario" class="form-control" rows="10"></textarea>  
+                             </div>   
+                         
+                             <div>
+                                 <br>
+                                 <div>
+                                     <input type="checkbox" class="form-check-input" id="gridCheck">
+                                     <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades</label>
+                                 </div>
+                             </div>
+                                                        
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
                     </div>
-                    <div>
-                        <label for="zona">Zona</label>
-                        <select id="zona" class="form-control">
-                            <option>Centro</option>
-                            <option>Zona Sur</option>
-                            <option>Zona Norte</option>
-                            <option>Zona ESte</option>
-                            <option>Zona Oeste</option>
-                        </select>
-                    </div> 
                 </div>
-                <div>
-                  <label for="comentario">Comentario</label>
-                  <textarea id="comentario" class="form-control" rows="10"></textarea>  
-                </div>   
-                <div>
-                    <div>
-                        <input type="checkbox" class="form-check-input" id="gridCheck">
-                        <label class="form-check-label" for="exampleCheck1">Quiero que me contacten</label>
-                    </div>
-                </div>
-                   <button type="submit">Enviar</button>
-                </form>
-        </div>
-   
-    <!-- importo el footer -->
-    <object data="common/footer.html" type="text/x-scriptlet"></object>
+            </div>
+        </section>
     
+
+    <footer>
+    <!-- importo el footer -->
+    <iframe src="common\footer.html"></iframe>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
   </body>
 </html>

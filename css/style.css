@@ -1,0 +1,63 @@
+body{
+    background-image: url("../img/fondo3.png!d");
+    padding: 15px;
+    margin: 5px;
+}
+/*index html*/
+/*card de productos
+boton y resaltar precion con b
+paginador*/
+.btn{
+    font-size: larger;
+}
+
+b{
+    font-size: larger;
+    color: blanchedalmond;
+}
+
+.navegacion {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.navegacion a{
+    font-size: larger;
+    color: blanchedalmond;
+    background-color: rgb(36, 35, 35);
+    border-radius: 1px;
+    border-color: blanchedalmond;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/*cuadro del footer*/
+footer iframe{
+    width: 100%;
+    height: 72px;
+}
+
+/*navbar htlm*/
+nav{
+    width: 100%;
+    height: 126px;
+}
+
+.body{
+    background: none;
+    overflow-y: hidden;
+}
+
+/*cuadro del navbar*/
+nav iframe{
+    width: 100%;
+    border: none;
+}
+
+
+/*cambio color font en titulos servicios y contacto*/
+.letra-blanca{
+    color: blanchedalmond;
+    text-align: center;
+}

@@ -1,62 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"  type="text/css">
+
     <title>Mundo Gamer</title>
 </head>
 <body>
     
-<!-- importo el NavBar -->
-<object data="common/navBar.html" type="text/x-scriptlet"></object>
-    
- <!-- slide de fotos -->
- <img src="img/razer-logo.png" alt="">
- <img src="img/accesorios-gaming.jpg" alt="">
- <img src="img/accesorios.jpg" alt="">      
-
-<!-- inician card de productos -->
-    <div class="contenedor">
-        <div class="contenedor-cards">  
-
-          <div class="contenedor-card-item">
-                <div class="contenedor-card-item-wrapper">
-                  <img src="img/gabinete1.jpg" alt="">
-                  <div class="contenedor-info">
-                        <div class="info">
-                          <p class="Producto">Producto1</p>                          
-                        </div>                
-                  </div>
-                </div>
-          </div>
-
-          <div class="contenedor-card-item">
-            <div class="contenedor-card-item-wrapper">
-              <img src="img/monitor1.jpg" alt="">
-              <div class="contenedor-info">
-                    <div class="info">
-                      <p class="Producto">Producto2</p>
-                    </div>                
-              </div>
-            </div>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="img/logo.jpg" alt="logo" width="120" height="90"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-secondary" type="submit">Buscar</button>
+          </form>
+        </div>
       </div>
-      
-      <div class="contenedor-card-item">
-        <div class="contenedor-card-item-wrapper">
-          <img src="img/monitor2.jpg" alt="">
-          <div class="contenedor-info">
-                <div class="info">
-                  <p class="Producto">Producto3</p>
-                </div>                
+    </nav>
+
+    <!-- slide de fotos --> 
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/baner-logo.jpg" class="d-block w-100" alt="logo">
+        </div>
+        <div class="carousel-item">
+          <img src="img/accesorios-gaming.jpg" class="d-block w-100" alt="accesorios gaming">
+        </div>
+        <div class="carousel-item">
+          <img src="img/accesorios2.jpg" class="d-block w-100" alt="marcas">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+    <!-- inician card de productos -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/gabinete1.jpg" class="card-img-top" alt="gabinete cpu">
+          <div class="card-body">
+            <h5 class="card-title">Gabinete</h5>
+            <p class="card-text">Caracteristicas del gabinete:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi. </p>
+          </div>
+          <a href="#" class="btn btn-secondary">ver mas</a>
+          <div class="card-footer card-text-white bg-dark">
+            <small class="text-muted"><b>$ 0,00</b></small>
           </div>
         </div>
-  </div>
+      </div>
 
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/gabinete2.jpg" class="card-img-top" alt="gabinete con luces">
+          <div class="card-body">
+            <h5 class="card-title">Gabinete con Luces</h5>
+            <p class="card-text">Caracteristicas del gabinete:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi. </p>
+          </div>
+          <a href="#" class="btn btn-secondary">ver mas</a>
+          <div class="card-footer card-text-white bg-dark">
+            <small class="text-muted"><b>$ 0,00</b></small>
+          </div>
+        </div>
+      </div>
 
-<p>Paginador  1-2-3 </p>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/monitor1.jpg" class="card-img-top" alt="monitor">
+          <div class="card-body">
+            <h5 class="card-title">Monitor</h5>
+            <p class="card-text">Caracteristicas del Monitor:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi. </p>
+          </div>
+          <a href="#" class="btn btn-secondary">ver mas</a>
+          <div class="card-footer card-text-white bg-dark">
+            <small class="text-muted"><b>$ 0,00</b></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- 2da fila de card de productos -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/monitor2.jpg" class="card-img-top" alt="Monitor">
+          <div class="card-body">
+            <h5 class="card-title">Monitor</h5>
+            <p class="card-text">Caracteristicas del gabinete:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi. </p>
+          </div>
+          <a href="#" class="btn btn-secondary">ver mas</a>
+          <div class="card-footer card-text-white bg-dark">
+            <small class="text-muted"><b>$ 0,00</b></small>
+          </div>
+        </div>
+      </div>
 
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/oferta-silla-teclad-auric.jpg" class="card-img-top" alt="Combo2">
+          <div class="card-body">
+            <h5 class="card-title">Silla + Teclado + Auriculares</h5>
+            <p class="card-text">Caracteristicas del combo:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi.</p>
+          </div>
+          <a href="#" class="btn btn-secondary">ver mas</a>
+          <div class="card-footer card-text-white bg-dark">
+            <small class="text-muted"><b>$ 0,00</b></small>
+          </div>
+        </div>
+      </div>
 
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/oferta1.webp" class="card-img-top" alt="combo1">
+          <div class="card-body">
+            <h5 class="card-title">Silla + Teclado + Auric + Mouse</h5>
+            <p class="card-text">Caracteristicas del Combo:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi. </p>
+          </div>
+          <a href="#" class="btn btn-secondary">ver mas</a>
+          <div class="card-footer card-text-white bg-dark">
+            <small class="text-muted"><b>$ 0,00</b></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- paginador -->    
+      <nav class="navegacion">
+        <a href="index.html"> Primero </a>
+        <a href="#"> 1 </a>
+        <a href="#"> 2 </a>
+        <a href="#"> 3 </a>
+        <a href="#"> 4 </a>
+        <a href="#"> Ultimo </a>
+      </nav>                  
+      
+<footer>
     <!-- importo el footer -->
-    <object data="common/footer.html" type="text/x-scriptlet"></object>    
+    <iframe src="common/footer.html"></iframe>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
 </body>
 </html>
