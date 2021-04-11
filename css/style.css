@@ -6,8 +6,7 @@ body{
 }
 /*index html*/
 /*card de productos
-boton y resaltar precion con b
-paginador*/
+boton y resaltar precios con b y paginador*/
 .btn{
     font-size: larger;
 }
@@ -34,6 +33,31 @@ b{
     text-decoration: none;
 }
 
+/*Boton de ir arriba*/
+#button-up{
+    width: 60px;
+    height: 60px;
+    background: #ee0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
 /*cuadro del footer*/
 footer iframe{
     width: 100%;
@@ -52,6 +76,7 @@ nav{
     overflow-y: hidden;
     font-family: 'Roboto', sans-serif;
 }
+
 
 /*cuadro del navbar*/
 nav iframe{
