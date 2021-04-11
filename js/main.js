@@ -26,3 +26,14 @@ window.onscroll = function(){
     }
 
 }
+
+//animacion boton ver mas
+function mOver(obj) {
+    obj.innerHTML = "VER MAS"
+  }
+  
+  function mOut(obj) {
+    obj.innerHTML = "Ver Mas"
+  }
+
+
