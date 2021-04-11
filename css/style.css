@@ -90,3 +90,9 @@ nav iframe{
     color: blanchedalmond;
     text-align: center;
 }
+
+/* iframe mapa*/
+.mapa{
+    display: flex;
+    
+}
