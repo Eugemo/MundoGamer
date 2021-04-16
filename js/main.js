@@ -36,4 +36,28 @@ function mOver(obj) {
     obj.innerHTML = "Ver Mas"
   }
 
+//formulario buscar en index
+//
 
+function filtrado(){
+    console.log('entro al script');
+    const select = document.getElementById('select');
+    console.log(select.value + ' leo seleccion');
+    
+    if(select.value == "1"){
+        console.log('entro por monitores')
+        var id = "monitores";
+        console.log(id);
+        //document.getElementById(this) != id.value.hidde();
+        document.getElementById("monitores").show();             
+         
+    }else{
+        if(select.value == "2"){
+            console.log('entro por gabinetes')
+
+        }else{
+            console.log('entro por combos')   
+        //alert.style.visibility = 'hidden';
+        }
+    }    
+}
