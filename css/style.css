@@ -25,15 +25,15 @@ boton y resaltar precios con b y paginador*/
 }
 
 b{
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     color: blanchedalmond;
 }
 
-/*tarjeta*/
+/*card tarjeta*/
 .tarjeta{
     width: 22rem;
-    
+    align-self:auto;
 }
 
 .navegacion {
