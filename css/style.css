@@ -30,6 +30,12 @@ b{
     color: blanchedalmond;
 }
 
+/*tarjeta*/
+.tarjeta{
+    width: 22rem;
+    
+}
+
 .navegacion {
     text-align: center;
     margin-top: 35px;

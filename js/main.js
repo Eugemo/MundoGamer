@@ -36,7 +36,10 @@ function mOut(obj) {
     obj.innerHTML = "Ver Mas"
 }
 
-
+//paginador
+function paginador() {
+    alert('No hay mas productos!😊');
+  }
 
 
 //formulario buscar en index
